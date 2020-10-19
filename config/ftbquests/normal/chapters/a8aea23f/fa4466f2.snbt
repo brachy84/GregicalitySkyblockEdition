@@ -1,0 +1,21 @@
+{
+	x: -1.5d,
+	y: -5.0d,
+	dependencies: [
+		"09d296b2"
+	],
+	tasks: [{
+		uid: "371f7595",
+		type: "item",
+		title: "Any blockGlassHardened",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "blockGlassHardened",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter"
+		}]
+	}]
+}

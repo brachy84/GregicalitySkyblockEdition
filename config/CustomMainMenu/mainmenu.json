@@ -1,0 +1,154 @@
+{
+    "images": {
+        "title": {
+            "image": "modpack:title/title.png",
+            "posX": -250,
+            "posY": -150,
+            "width": 500,
+            "height": 100,
+            "alignment": "center"
+        }
+    },
+    "buttons": {
+        "singleplayer": {
+            "text": "menu.singleplayer",
+            "posX": -280,
+            "posY": 32,
+            "width": 128,
+            "height": 20,
+			"texture": "modpack:gui/singleplayer.png",
+            "action": {
+                "type": "openGui",
+                "gui": "singleplayer"
+            }
+        },
+        "multiplayer": {
+            "text": "menu.multiplayer",
+            "posX": -280,
+            "posY": 60,
+            "width": 128,
+            "height": 20,
+			"texture": "modpack:gui/multiplayer.png",
+            "action": {
+                "type": "openGui",
+                "gui": "multiplayer"
+            }
+        },
+        "mods": {
+            "text": "fml.menu.mods",
+            "posX": -280,
+            "posY": 88,
+            "width": 128,
+            "height": 20,
+			"texture": "modpack:gui/mods.png",
+            "action": {
+                "type": "openGui",
+                "gui": "mods"
+            }
+        },
+        "Bug Report": {
+            "text": "Bug Report",
+            "tooltip": "Report a bug",
+            "posX": -280,
+            "posY": 116,
+            "width": 128,
+            "height": 20,
+			"texture": "modpack:gui/mods.png",
+            "action": {
+                "type": "openLink",
+                "link": "https://github.com/huneau/gregicality-skyblock-edition/issues"
+            }
+        },
+        "options": {
+            "text": "menu.options",
+            "posX": -280,
+            "posY": 144,
+            "width": 128,
+            "height": 20,
+			"texture": "modpack:gui/options.png",
+			"textOffsetX": 10,
+            "action": {
+                "type": "openGui",
+                "gui": "options"
+            }
+        },
+        "quit": {
+            "text": "menu.quit",
+            "posX": -280,
+            "posY": 200,
+            "width": 128,
+            "height": 20,
+			"texture": "modpack:gui/quit.png",
+            "action": {
+                "type": "quit"
+            }
+        },
+        "language": {
+            "text": "Language",
+            "posX": -280,
+            "posY": 172,
+            "width": 128,
+            "height": 20,
+			"texture": "modpack:gui/language.png",
+            "action": {
+                "type": "openGui",
+                "gui": "languages"
+            }
+        },
+		"discord": {
+            "text" : "",
+			"hoverText" : "Gregicality Discord",
+			"textOffsetY" : -30,
+			"hoverTextColor" : 16777215,
+            "posX" : -140,
+            "posY" : 172,
+            "width" : 48,
+            "height" : 48,
+			"imageWidth": 40,
+			"imageHeight": 40,
+			"texture" : "modpack:gui/discord.png",
+            "action" : {
+                "type" : "openLink",
+                "link" : "https://discord.gg/y5dkPtF"
+            }
+        },
+        "refresh": {
+            "text": "",
+            "posX": -315,
+            "posY": -80,
+            "width": 20,
+            "height": 20,
+            "texture": "custommainmenu:textures/gui/buttons.png",
+            "action": {
+                "type": "refresh"
+            }
+        }
+    },
+    "texts": {
+        "mojang": {
+            "text": "Copyright Mojang AB. Do not distribute!",
+            "hoverText": "�nCopyright Mojang AB. Do not distribute!",
+            "posX": -197,
+            "posY": -10,
+            "color": -1,
+            "alignment": "bottom_right",
+            "action": {
+                "type": "openGui",
+                "gui": "credits"
+            }
+        },
+        "fml": {
+            "text": "",
+            "posX": 2,
+            "posY": -40,
+            "color": -1,
+            "alignment": "bottom_left"
+        }
+    },
+    "other": {
+        "background": {
+            "image": "modpack:background/splash_screen2.png",
+            "mode": "fill"
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+	x: -3.5d,
+	y: -0.5d,
+	dependencies: [
+		"7228abc2"
+	],
+	hide: true,
+	tasks: [{
+		uid: "c0b51d89",
+		type: "item",
+		items: [{
+			item: "excompressum:wooden_crucible"
+		}]
+	}],
+	rewards: [{
+		uid: "c79978a6",
+		type: "ftbmoney:money",
+		ftb_money: 1L
+	}]
+}
