@@ -84,13 +84,13 @@ zenClass Gregtech {
 	val rocket_fuel as RecipeMap = RecipeMap.getByName("rocket_fuel");
 	val naquadah_reactor as RecipeMap = RecipeMap.getByName("naquadah_reactor");
 
-	val screwDriver as IIngredient = <gregtech:meta_tool:11>;
-	val wrench as IIngredient = <gregtech:meta_tool:8>;
-	val saw as IIngredient = <gregtech:meta_tool:5>;
-	val hammer as IIngredient = <gregtech:meta_tool:6>;
-	val mortar as IIngredient = <gregtech:meta_tool:12>;
-	val file as IIngredient = <gregtech:meta_tool:9>;
-	val cutter as IIngredient = <gregtech:meta_tool:13>;
+	val screwDriver as IIngredient = <ore:gregScrewDrivers>;
+	val wrench as IIngredient = <ore:gregWrenches>;
+	val saw as IIngredient = <ore:gregSaws>;
+	val hammer as IIngredient = <ore:gregHardHammers>;
+	val mortar as IIngredient = <ore:gregMortars>;
+	val file as IIngredient = <ore:gregFiles>;
+	val cutter as IIngredient = <ore:gregWireCutters>;
 	val benCyl as IItemStack = <gtadditions:ga_meta_tool:1>;
 	val benCylLrg as IItemStack = <gtadditions:ga_meta_tool:0>;
 

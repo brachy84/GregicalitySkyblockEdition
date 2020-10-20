@@ -59,6 +59,89 @@ function specialTreatment() {
 }
 
 static oresAdd as IItemStack[][IOreDictEntry] = {
+    // Gregtech tools
+    <ore:gregWrenches> : [
+        <gregtech:meta_tool:8>.withEmptyTag(), 
+        <gregtech:meta_tool:29>.withEmptyTag(), 
+        <gregtech:meta_tool:30>.withEmptyTag(), 
+        <gregtech:meta_tool:31>.withEmptyTag()
+    ],
+    <ore:gregSaws> : [
+        <gregtech:meta_tool:5>.withEmptyTag(),
+        <gregtech:meta_tool:16>.withEmptyTag(), 
+        <gregtech:meta_tool:26>.withEmptyTag(), 
+        <gregtech:meta_tool:27>.withEmptyTag(), 
+        <gregtech:meta_tool:28>.withEmptyTag(), 
+        <gregtech:meta_tool:33>.withEmptyTag(),
+    ],
+    <ore:gregHoes> : [
+        <gregtech:meta_tool:4>.withEmptyTag()
+    ],
+    <ore:gregAxes> : [
+        <gregtech:meta_tool:3>.withEmptyTag()
+    ],
+    <ore:gregFiles> : [
+        <gregtech:meta_tool:9>.withEmptyTag()
+    ],
+    <ore:gregSwords> : [
+        <gregtech:meta_tool:0>.withEmptyTag()
+    ],
+    <ore:gregScoops> : [
+        <gregtech:meta_tool:14>.withEmptyTag()
+    ],
+    <ore:gregKnives> : [
+        <gregtech:meta_tool:17>.withEmptyTag()
+    ],
+    <ore:gregBlades> : [
+        <gregtech:meta_tool:16>.withEmptyTag(),
+        <gregtech:meta_tool:17>.withEmptyTag(),
+        <gregtech:meta_tool:18>.withEmptyTag(),
+        <gregtech:meta_tool:19>.withEmptyTag()
+    ],
+    <ore:gregMortars> : [
+        <gregtech:meta_tool:12>.withEmptyTag()
+    ],
+    <ore:gregShovels> : [
+        <gregtech:meta_tool:2>.withEmptyTag(),
+        <gregtech:meta_tool:16>.withEmptyTag(),
+    ],
+    <ore:gregPlungers> : [
+        <gregtech:meta_tool:37>.withEmptyTag()
+    ],
+    <ore:gregCrowbars> : [
+        <gregtech:meta_tool:10>.withEmptyTag(),
+        <gregtech:meta_tool:16>.withEmptyTag()
+    ],
+    <ore:gregPickaxes> : [
+        <gregtech:meta_tool:1>.withEmptyTag()
+    ],
+    <ore:gregBranchCutters> : [
+        <gregtech:meta_tool:15>.withEmptyTag()
+    ],
+    <ore:gregWireCutters> : [
+        <gregtech:meta_tool:13>.withEmptyTag()
+    ],
+    <ore:gregHardHammers> : [
+        <gregtech:meta_tool:6>.withEmptyTag()
+    ],
+    <ore:gregSoftHammers> : [
+        <gregtech:meta_tool:7>.withEmptyTag()
+    ],
+    <ore:gregJackHammers> : [
+        <gregtech:meta_tool:32>.withEmptyTag()
+    ],
+    <ore:gregScrewDrivers> : [
+        <gregtech:meta_tool:11>.withEmptyTag(),
+        <gregtech:meta_tool:34>.withEmptyTag()
+    ],
+    <ore:gregMiningDrills> : [
+        <gregtech:meta_tool:23>.withEmptyTag(),
+        <gregtech:meta_tool:24>.withEmptyTag(),
+        <gregtech:meta_tool:25>.withEmptyTag()
+    ],
+    <ore:gregJackHammers> : [
+        <gregtech:meta_tool:32>.withEmptyTag()
+    ],
     // GregTech stone types
     <ore:stoneMarble> : [
         <gregtech:mineral>,

@@ -28,13 +28,13 @@ gt.large_forge_hammer.recipeBuilder().inputs([<exnihilocreatio:block_granite_cru
 //Gregify Ex Nihilo
 recipes.remove(<ore:stickStone>);
 recipes.addShaped(<exnihilocreatio:item_material:6>,[
-[<gregtech:meta_tool:9>],
+[gt.file],
 [null,<ore:stone>]
 ]);
 recipes.remove(<exnihilocreatio:item_material:7>);
 recipes.addShaped(<exnihilocreatio:item_material:7>,[
 [<ore:stickStone>,<ore:stone>,<ore:stickStone>],
-[<ore:stone>,<gregtech:meta_tool:11>,<ore:stone>],
+[<ore:stone>, gt.screwDriver, <ore:stone>],
 [<ore:stickStone>,<ore:stone>,<ore:stickStone>]
 ]);
 recipes.remove(<exnihilocreatio:item_mesh:2>);
