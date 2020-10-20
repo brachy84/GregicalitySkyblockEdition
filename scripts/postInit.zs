@@ -19,4 +19,5 @@ function initRecipes() {
     scripts.recipes.xnet.init();
     scripts.recipes.thermal.init();
     scripts.recipes.rftools.init();
+    scripts.recipes.tconstruct.init();
 }

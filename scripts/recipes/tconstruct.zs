@@ -39,14 +39,14 @@ static removeFurnace as IIngredient[] = [
 
 function machineRecipes() {
     //Alloying
-    Alloy.removeRecipe(<liquid:steel>*18);
-    Alloy.removeRecipe(<liquid:brass>*3);
-    Alloy.removeRecipe(<liquid:alubrass>*4);
-    Alloy.removeRecipe(<liquid:red_alloy>*1);
-    Alloy.removeRecipe(<liquid:tin_alloy>*2);
-    Alloy.removeRecipe(<liquid:battery_alloy>*5);
-    Alloy.removeRecipe(<liquid:soldering_alloy>*10);
-    Alloy.removeRecipe(<liquid:magnalium>*3);
+    Alloy.removeRecipe(<liquid:steel>);
+    Alloy.removeRecipe(<liquid:brass>);
+    Alloy.removeRecipe(<liquid:alubrass>);
+    Alloy.removeRecipe(<liquid:red_alloy>);
+    Alloy.removeRecipe(<liquid:tin_alloy>);
+    Alloy.removeRecipe(<liquid:battery_alloy>);
+    Alloy.removeRecipe(<liquid:soldering_alloy>);
+    Alloy.removeRecipe(<liquid:magnalium>);
     Alloy.addRecipe(<liquid:alubrass> * 4, [<liquid:aluminium> * 3, <liquid:copper>]);
 
 
