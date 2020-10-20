@@ -364,6 +364,13 @@ function init() {
         }
     }
 
+    for concrete in <ore:blockConcrete>.items {
+        val entryMod as string = concrete.definition.id.split(":")[0];
+        if(entryMod != "gregtech") {
+            <ore:blockConcrete>.remove(concrete);
+        }
+    }
+
     for ore, items in oresAdd {
         ore.addItems(items);
     }
