@@ -67,7 +67,8 @@ static removeFurnace as IIngredient[] = [
     <ceramics:faucet:0>,
     <ceramics:channel:0>,
     <ceramics:porcelain_barrel:0>,
-    <ceramics:porcelain_barrel:0>
+    <ceramics:porcelain_barrel:0>,
+    <minecraft:coal:1>
 ];
 
 function machineRecipes() {
