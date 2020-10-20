@@ -430,13 +430,14 @@ function machineRecipes() {
         .buildAndRegister();
 
     // Fluix Steel
+    Aggregator.removeRecipe(<threng:material:1>);
     gt.mixer.recipeBuilder()
         .inputs([<ore:dustFluix> * 2, <ore:dustCarbon> * 2, <appliedenergistics2:material:45>])
         .outputs([<threng:material:1>])
         .EUt(90).duration(sec(6))
         .buildAndRegister();
     gt.blast_furnace.recipeBuilder()
-		.inputs([<threng:material> * 1, <ore:ingotSteel>])
+		.inputs([<threng:material:1> * 1, <ore:ingotSteel>])
 		.property("temperature", 2700)
 		.outputs([<threng:material:0> * 1])
 		.duration(sec(20))
