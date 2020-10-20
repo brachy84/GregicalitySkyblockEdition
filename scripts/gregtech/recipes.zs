@@ -36,6 +36,8 @@ static removeFurnace as IIngredient[] = [
 ];
 
 function machineRecipes() {
+    //Compressed Fireclay
+    Utils.removeRecipeByOutput(gt.compressor, [<gregtech:meta_item_2:32014>], [], false); //Compressed Fireclay
     
     //Useful
     gt.lathe.recipeBuilder().inputs([<minecraft:stone>]).outputs([<exnihilocreatio:item_material:6>,<gregtech:meta_item_1:1328>*2]).duration(500).EUt(16).buildAndRegister();
