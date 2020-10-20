@@ -4,7 +4,10 @@
 	shape: "pentagon",
 	text: [
 		"Make one of these Boilers to complete the quest.",
-		"Make sure to look at the tooltips before you make one."
+		"Make sure to look at the tooltips before you make one.",
+		"",
+		"Boilers need a while to heat up. When they reach certain heat they will beginn to produce Steam.",
+		"Make sure to always keep water in the buffer. If you put water into a empty and heated Boiler it will explode."
 	],
 	dependencies: [
 		"18b8af44"

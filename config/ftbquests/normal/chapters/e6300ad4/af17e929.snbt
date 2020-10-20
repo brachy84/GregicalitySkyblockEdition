@@ -4,7 +4,7 @@
 	x: 0.5d,
 	y: 0.5d,
 	text: [
-		""
+		"In some Cultures it is Tradition to break Porcelain at Weddings. They believe it brings Fortune"
 	],
 	dependencies: [
 		"351cfa71"

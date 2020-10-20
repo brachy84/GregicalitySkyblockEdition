@@ -1,6 +1,7 @@
 {
 	title: "Glass",
-	x: 1.5d,
+	icon: "minecraft:glass",
+	x: 1.0d,
 	y: 3.5d,
 	text: [
 		"You can't just smelt Sand to get Glass. You need need to smelt Glass Dust in the Smeltery and smelt the Clear Glass in a Furnace to get normal Glass."

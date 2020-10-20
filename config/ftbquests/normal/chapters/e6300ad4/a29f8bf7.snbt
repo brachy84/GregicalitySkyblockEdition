@@ -4,7 +4,9 @@
 	x: -0.5d,
 	y: -1.5d,
 	text: [
-		"The Base for most resources."
+		"The Base for most resources. Every Sieve needs a Mesh. Currently you can only make the Basic ones.",
+		"",
+		"By placing multiple Sieves next to each other you will be able to use up to 25 Sieves at the same Time (if they have the same Mesh Tier)."
 	],
 	dependencies: [
 		"1e32ed9f"

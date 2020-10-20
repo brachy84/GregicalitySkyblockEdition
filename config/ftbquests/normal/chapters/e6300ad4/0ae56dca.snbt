@@ -1,6 +1,9 @@
 {
 	x: -1.5d,
 	y: -2.5d,
+	text: [
+		"Use the Crook to break Leaves to get more Saplings, Apples and Silk Worms"
+	],
 	dependencies: [
 		"7228abc2"
 	],

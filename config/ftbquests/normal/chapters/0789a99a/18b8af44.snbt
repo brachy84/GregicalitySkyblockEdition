@@ -2,6 +2,10 @@
 	x: 0.0d,
 	y: -0.5d,
 	shape: "square",
+	text: [
+		"Steam machines needs Steam \\o/.",
+		"Make sure to not block the output which is by default on the Back. This is where excess Steam will be outputted in form of Particles."
+	],
 	dependencies: [
 		"8071792d"
 	],

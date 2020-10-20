@@ -1,5 +1,25 @@
 {
 	title: "Custom Drawer",
+	icon: {
+		id: "storagedrawers:customdrawers",
+		tag: {
+			MatT: {
+				id: "minecraft:planks",
+				Count: 1b,
+				Damage: 1s
+			},
+			MatF: {
+				id: "minecraft:planks",
+				Count: 1b,
+				Damage: 2s
+			},
+			MatS: {
+				id: "minecraft:planks",
+				Count: 1b,
+				Damage: 0s
+			}
+		}
+	},
 	x: 2.5d,
 	y: 0.5d,
 	text: [

@@ -1,6 +1,9 @@
 {
 	x: -3.5d,
 	y: -0.5d,
+	text: [
+		"Use this to get Water. Just put some Saplings or other organic Material in and wait. Rain will also fill it."
+	],
 	dependencies: [
 		"7228abc2"
 	],

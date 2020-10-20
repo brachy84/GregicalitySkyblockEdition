@@ -4,7 +4,9 @@
 	x: -1.5d,
 	y: -1.5d,
 	text: [
-		"Put organic material like leaves, apples and spalings in to get dirt."
+		"Put organic material like leaves, apples and spalings in to get dirt.",
+		"",
+		"But Rain will fill the Barrel with Water"
 	],
 	dependencies: [
 		"7228abc2"

@@ -1,6 +1,9 @@
 {
 	x: 0.5d,
 	y: -1.5d,
+	text: [
+		"Cobble to Gravel and Gravel to Sand..."
+	],
 	dependencies: [
 		"a29f8bf7"
 	],

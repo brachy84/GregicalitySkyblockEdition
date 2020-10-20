@@ -2,6 +2,11 @@
 	icon: "ceramics:clay_bucket",
 	x: -0.5d,
 	y: -0.5d,
+	text: [
+		"Just as usefull as a normal Bucket,",
+		"",
+		"but it breaks after pouring out a hot fluid."
+	],
 	dependencies: [
 		"bc714d1c",
 		"320dab77"

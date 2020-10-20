@@ -1,4 +1,5 @@
 {
+	icon: "gregtech:machine 1 526",
 	x: 2.5d,
 	y: 1.5d,
 	dependencies: [

@@ -20,6 +20,30 @@
 		items: [{
 			item: "tconstruct:smeltery_controller"
 		}]
+	},
+	{
+		uid: "e06a88f8",
+		type: "item",
+		items: [{
+			item: "tconstruct:seared_tank"
+		}]
+	},
+	{
+		uid: "9479ac24",
+		type: "item",
+		items: [{
+			item: "tconstruct:smeltery_io"
+		}]
+	},
+	{
+		uid: "735ef2bb",
+		type: "item",
+		items: [{
+			item: "tconstruct:casting"
+		},
+		{
+			item: "tconstruct:casting 1 1"
+		}]
 	}],
 	rewards: [{
 		uid: "ebeb8d7c",
