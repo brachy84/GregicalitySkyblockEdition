@@ -8,7 +8,6 @@
 	dependencies: [
 		"ec314ebe"
 	],
-	hide: true,
 	tasks: [{
 		uid: "138398e3",
 		type: "item",

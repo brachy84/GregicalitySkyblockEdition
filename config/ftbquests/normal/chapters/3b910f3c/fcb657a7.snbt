@@ -4,7 +4,6 @@
 	dependencies: [
 		"ed5525fc"
 	],
-	hide: true,
 	tasks: [{
 		uid: "ca1660ca",
 		type: "item",

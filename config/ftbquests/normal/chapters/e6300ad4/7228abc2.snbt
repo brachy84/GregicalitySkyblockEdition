@@ -5,6 +5,7 @@
 		uid: "38b0d99a",
 		type: "item",
 		title: "Any logWood",
+		icon: "minecraft:log",
 		items: [{
 			ForgeCaps: {
 				Parent: {

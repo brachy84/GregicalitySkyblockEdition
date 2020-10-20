@@ -4,7 +4,6 @@
 	dependencies: [
 		"9ae79371"
 	],
-	hide_text_until_complete: true,
 	tasks: [{
 		uid: "5e3a83be",
 		type: "item",

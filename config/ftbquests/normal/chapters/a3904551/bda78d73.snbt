@@ -7,7 +7,6 @@
 	dependencies: [
 		"a7916bd3"
 	],
-	hide: true,
 	tasks: [{
 		uid: "31807da2",
 		type: "checkmark",

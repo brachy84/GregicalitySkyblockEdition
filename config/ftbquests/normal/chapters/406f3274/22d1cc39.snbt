@@ -5,10 +5,10 @@
 	text: [
 		""
 	],
+	can_repeat: true,
 	dependencies: [
 		"3057a244"
 	],
-	hide: true,
 	tasks: [{
 		uid: "f2f4d708",
 		type: "item",

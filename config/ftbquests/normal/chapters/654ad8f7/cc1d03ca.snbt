@@ -9,7 +9,6 @@
 		"7537adac",
 		"de4de422"
 	],
-	hide_text_until_complete: true,
 	tasks: [{
 		uid: "fbc38767",
 		type: "item",
