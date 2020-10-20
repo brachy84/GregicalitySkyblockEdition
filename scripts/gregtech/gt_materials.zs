@@ -21,6 +21,8 @@ var matIndex as int = 500;
 
 <material:tantalum>.addFlags(["GENERATE_DENSE"]);
 
+<material:nether_star>.addFlags(["GENERATE_ORE"]);
+
 <material:iron>.addFlags(["GENERATE_SMALL_GEAR"]);
 
 <material:uranium_radioactive>.addFlags(["GENERATE_ORE"]);

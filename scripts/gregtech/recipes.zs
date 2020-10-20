@@ -5,6 +5,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 import mods.gregtech.recipe.FuelRecipe;
+import mods.gtadditions.recipe.Utils;
 
 static shapedRecipes as IIngredient[][][][IItemStack] = {
 	/*
