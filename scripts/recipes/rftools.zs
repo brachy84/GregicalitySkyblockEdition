@@ -17,21 +17,21 @@ static shapedRecipes as IIngredient[][][][IItemStack] = {
 		[
 			[<minecraft:quartz>, <minecraft:redstone>, <minecraft:quartz>],
 			[<ore:plateBrass>, <meta_tile_entity:gregtech:wooden_chest>, <ore:plateBrass>],
-			[<minecraft:quartz>, <minecraft:redstone>, <minecraft:quartz>],
+			[<minecraft:quartz>, <minecraft:redstone>, <minecraft:quartz>]
 		]
 	],
 	<rftools:storage_module:1> : [
 		[
-			[<minecraft:quartz>, <minecraft:redstone>, <minecraft:quartz>],
-			[<ore:gearBrass>, <meta_tile_entity:gregtech:bronze_chest>, <ore:gearBrass>],
-			[<minecraft:quartz>, <minecraft:redstone>, <minecraft:quartz>],
+			[<minecraft:quartz>, <meta_tile_entity:gregtech:bronze_chest>, <minecraft:quartz>],
+			[<ore:gearBrass>, <rftools:storage_module>, <ore:gearBrass>],
+			[<minecraft:quartz>, <minecraft:redstone>, <minecraft:quartz>]
 		]
 	],
 	<rftools:storage_module:2> : [
 		[
-			[<minecraft:quartz>, <ore:ingotGold>, <minecraft:quartz>],
-			[<ore:gearBrass>, <meta_tile_entity:gregtech:steel_chest>, <ore:gearBrass>],
-			[<minecraft:quartz>, <minecraft:diamond>, <minecraft:quartz>],
+			[<minecraft:quartz>, <meta_tile_entity:gregtech:steel_chest>, <minecraft:quartz>],
+			[<ore:gearBrass>, <rftools:storage_module:1>, <ore:gearBrass>],
+			[<ore:ingotGold>, <minecraft:diamond>, <ore:ingotGold>]
 		]
 	]
 };
@@ -48,7 +48,7 @@ static shapelessRecipes as IIngredient[][][IItemStack] = {
 static removeRecipes as IItemStack[] = [
 	<rftools:machine_frame>,
 	<rftools:storage_module>,
-	<rftools:storage_modul:1>,
+	<rftools:storage_module:1>,
 	<rftools:storage_module:2>
 ];
 
