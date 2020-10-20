@@ -7,6 +7,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 import mods.gtadditions.recipe.LargeRecipeMap;
 import mods.gtadditions.recipe.LargeRecipeBuilder;
+import mods.threng.Aggregator;
 
 static quartzGlass as IIngredient = <appliedenergistics2:quartz_glass>; 
 static matPlate as IIngredient = <ore:plateNitinolA>;
@@ -42,7 +43,14 @@ static removeRecipes as IIngredient[] = [
     <extracells:storage.component:0>,
     <extracells:storage.component:1>,
     <extracells:storage.component:2>,
-    <extracells:storage.component:3>
+    <extracells:storage.component:3>,
+    <appliedenergistics2:condenser>,
+    <ae2fc:fluid_discretizer>,
+    <ae2fc:fluid_pattern_encoder>,
+    <ae2fc:fluid_packet_decoder>,
+    <ae2fc:ingredient_buffer>,
+    <ae2fc:burette>,
+    <threng:material:1>
 ];
 
 static addShaped as IIngredient[][][][IItemStack] = {
@@ -123,14 +131,14 @@ static addShaped as IIngredient[][][][IItemStack] = {
     <packagedauto:packager> : [
         [
             [apMatPlate, <packagedauto:me_package_component>, apMatPlate],
-            [<ore:cableSmart>, <meta_tile_entity:gtadditions:packer.iv>, <ore:cableSmart>],
+            [<ore:cableSmart>, <meta_tile_entity:gtadditions:packer.ev>, <ore:cableSmart>],
             [apMatPlate, <metaitem:electric.piston.iv>, apMatPlate]
         ]
     ],
     <packagedauto:unpackager> : [
         [
             [apMatPlate, <packagedauto:me_package_component>, apMatPlate],
-            [<ore:cableSmart>, <meta_tile_entity:gtadditions:unpacker.iv>, <ore:cableSmart>],
+            [<ore:cableSmart>, <meta_tile_entity:gtadditions:unpacker.ev>, <ore:cableSmart>],
             [apMatPlate, <metaitem:conveyor.module.iv>, apMatPlate]
         ]
     ],
@@ -146,6 +154,41 @@ static addShaped as IIngredient[][][][IItemStack] = {
             [apMatPlate, <packagedauto:me_package_component>, apMatPlate],
             [<xnet:connector>, <gregtech:machine_casing:5>, <xnet:connector>],
             [apMatPlate, <metaitem:electric.piston.iv>, apMatPlate],
+        ]
+    ],
+    <ae2fc:fluid_discretizer> : [
+        [
+            [matPlate, processor[2], matPlate],
+            [<appliedenergistics2:part:221>, <appliedenergistics2:condenser>, <appliedenergistics2:part:220>],
+            [matPlate, processor[2], matPlate]
+        ]
+    ],
+    <ae2fc:fluid_pattern_encoder> : [
+        [
+            [<ore:blockLapis>, processor[2], <ore:blockLapis>],
+            [matPlate, <ore:workbench>, matPlate],
+            [matPlate, matPlate, matPlate]
+        ]
+    ],
+    <ae2fc:fluid_packet_decoder> : [
+        [
+            [matPlate, <minecraft:hopper>, matPlate],
+            [<ore:cableFluix>, <appliedenergistics2:fluid_interface>, <ore:cableFluix>],
+            [matPlate, processor[0], matPlate]
+        ]
+    ],
+    <ae2fc:ingredient_buffer> : [
+        [
+            [matPlate, <appliedenergistics2:material:35>, matPlate],
+            [<appliedenergistics2:material:44>, quartzGlass, <appliedenergistics2:material:43>],
+            [matPlate, <appliedenergistics2:material:54>, matPlate]
+        ]
+    ],
+    <ae2fc:burette> : [
+        [
+            [matPlate, <minecraft:hopper>, matPlate],
+            [quartzGlass, <minecraft:bucket>, quartzGlass],
+            [matPlate, processor[0], matPlate]
         ]
     ]
 };
@@ -225,6 +268,16 @@ function machineRecipes() {
         .inputs([<appliedenergistics2:material:18>, gt.getCirc("LV"), <appliedenergistics2:material:20>])
         .outputs([<appliedenergistics2:material:22>])
         .EUt(196).duration(sec(9))
+        .buildAndRegister();
+    gt.forming_press.recipeBuilder()
+        .inputs([<threng:material:5>, gt.getCirc("MV"), <appliedenergistics2:material:20>])
+        .outputs([<threng:material:6>])
+        .EUt(196).duration(sec(16))
+        .buildAndRegister();
+    gt.forming_press.recipeBuilder()
+        .inputs([<threng:material:13>, gt.getCirc("MV"), <appliedenergistics2:material:20>])
+        .outputs([<threng:material:14>])
+        .EUt(196).duration(sec(16))
         .buildAndRegister();
 
     //Cores
@@ -359,6 +412,36 @@ function machineRecipes() {
         .duration(40)
         .EUt(40)
         .buildAndRegister();
+
+    // Condenser
+    gt.assembler.recipeBuilder()
+        .inputs([matPlate * 4, <ore:crystalPureFluix> * 64, quartzGlass * 4, <metaitem:electric.piston.hv> * 4])
+        .outputs([<appliedenergistics2:condenser>])
+        .EUt(418).duration(sec(60))
+        .buildAndRegister();
+
+    // Resonanting Crystal
+    Aggregator.removeRecipe(<threng:material:5>);
+    gt.chemical_reactor.recipeBuilder()
+        .inputs([<ore:crystalPureFluix>, <appliedenergistics2:material:45> * 2])
+        .fluidInputs([<liquid:ender> * 250, <liquid:redstone> * 576])
+        .outputs([<threng:material:5>])
+        .EUt(1024).duration(sec(60))
+        .buildAndRegister();
+
+    // Fluix Steel
+    gt.mixer.recipeBuilder()
+        .inputs([<ore:dustFluix> * 2, <ore:dustCarbon> * 2, <appliedenergistics2:material:45>])
+        .outputs([<threng:material:1>])
+        .EUt(90).duration(sec(6))
+        .buildAndRegister();
+    gt.blast_furnace.recipeBuilder()
+		.inputs([<threng:material> * 1, <ore:ingotSteel>])
+		.property("temperature", 2700)
+		.outputs([<threng:material:0> * 1])
+		.duration(sec(20))
+		.EUt(120)
+		.buildAndRegister();
 }
 
 function init() {
