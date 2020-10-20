@@ -2,20 +2,22 @@
     "images": {
         "title": {
             "image": "modpack:title/title.png",
-            "posX": -250,
-            "posY": -150,
-            "width": 500,
-            "height": 100,
+            "posX": -190,
+            "posY": -120,
+            "width": 380,
+            "height": 76,
             "alignment": "center"
         }
     },
     "buttons": {
         "singleplayer": {
             "text": "menu.singleplayer",
-            "posX": -280,
-            "posY": 32,
-            "width": 128,
-            "height": 20,
+            "posX": -200,
+            "posY": 15,
+            "width": 114,
+            "height": 18,
+			"imageWidth": 128,
+			"imageHeight": 20,
 			"texture": "modpack:gui/singleplayer.png",
             "action": {
                 "type": "openGui",
@@ -24,10 +26,12 @@
         },
         "multiplayer": {
             "text": "menu.multiplayer",
-            "posX": -280,
-            "posY": 60,
-            "width": 128,
-            "height": 20,
+            "posX": -200,
+            "posY": 37,
+            "width": 114,
+            "height": 18,
+			"imageWidth": 128,
+			"imageHeight": 20,
 			"texture": "modpack:gui/multiplayer.png",
             "action": {
                 "type": "openGui",
@@ -36,10 +40,12 @@
         },
         "mods": {
             "text": "fml.menu.mods",
-            "posX": -280,
-            "posY": 88,
-            "width": 128,
-            "height": 20,
+            "posX": -200,
+            "posY": 59,
+            "width": 114,
+            "height": 18,
+			"imageWidth": 128,
+			"imageHeight": 20,
 			"texture": "modpack:gui/mods.png",
             "action": {
                 "type": "openGui",
@@ -49,10 +55,12 @@
         "Bug Report": {
             "text": "Bug Report",
             "tooltip": "Report a bug",
-            "posX": -280,
-            "posY": 116,
-            "width": 128,
-            "height": 20,
+            "posX": -200,
+            "posY": 81,
+            "width": 114,
+            "height": 18,
+			"imageWidth": 128,
+			"imageHeight": 20,
 			"texture": "modpack:gui/mods.png",
             "action": {
                 "type": "openLink",
@@ -61,10 +69,12 @@
         },
         "options": {
             "text": "menu.options",
-            "posX": -280,
-            "posY": 144,
-            "width": 128,
-            "height": 20,
+            "posX": -200,
+            "posY": 103,
+            "width": 114,
+            "height": 18,
+			"imageWidth": 128,
+			"imageHeight": 20,
 			"texture": "modpack:gui/options.png",
 			"textOffsetX": 10,
             "action": {
@@ -72,38 +82,43 @@
                 "gui": "options"
             }
         },
-        "quit": {
-            "text": "menu.quit",
-            "posX": -280,
-            "posY": 200,
-            "width": 128,
-            "height": 20,
-			"texture": "modpack:gui/quit.png",
-            "action": {
-                "type": "quit"
-            }
-        },
         "language": {
             "text": "Language",
-            "posX": -280,
-            "posY": 172,
-            "width": 128,
-            "height": 20,
+            "posX": -200,
+            "posY": 125,
+            "width": 114,
+            "height": 18,
+			"imageWidth": 128,
+			"imageHeight": 20,
 			"texture": "modpack:gui/language.png",
             "action": {
                 "type": "openGui",
                 "gui": "languages"
             }
         },
+		"quit": {
+            "text": "menu.quit",
+            "posX": -200,
+            "posY": 147,
+            "width": 114,
+            "height": 18,
+			"imageWidth": 128,
+			"imageHeight": 20,
+			"texture": "modpack:gui/quit.png",
+            "action": {
+                "type": "quit"
+            }
+        },
 		"discord": {
             "text" : "",
 			"hoverText" : "Gregicality Discord",
-			"textOffsetY" : -30,
+			"textOffsetY" : -25,
+			"textOffsetX" : 25,
 			"hoverTextColor" : 16777215,
-            "posX" : -140,
-            "posY" : 172,
-            "width" : 48,
-            "height" : 48,
+            "posX" : -75,
+            "posY" : 133,
+            "width" : 32,
+            "height" : 32,
 			"imageWidth": 40,
 			"imageHeight": 40,
 			"texture" : "modpack:gui/discord.png",
@@ -114,10 +129,12 @@
         },
         "refresh": {
             "text": "",
-            "posX": -315,
-            "posY": -80,
-            "width": 20,
-            "height": 20,
+            "posX": -240,
+            "posY": 181,
+            "width": 10,
+            "height": 10,
+			"imageWidth": 20,
+			"imageHeight": 20,
             "texture": "custommainmenu:textures/gui/buttons.png",
             "action": {
                 "type": "refresh"
