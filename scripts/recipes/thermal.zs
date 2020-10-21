@@ -9,26 +9,108 @@ import mods.gtadditions.recipe.Utils;
 import mods.tconstruct.Alloy;
 
 static shapedRecipes as IIngredient[][][][IItemStack] = {
-	/*
-    <abyssalcraft:necronomicon:0>: [
+    <thermaldynamics:duct_16:0> * 6: [ //Fluiduct clear
 		[
-			[<minecraft:rotten_flesh:0>, <abyssalcraft:corflesh:0>, <minecraft:rotten_flesh:0>],
-			[<abyssalcraft:corflesh:0>, <primal:plant_cloth:0>, <abyssalcraft:corflesh:0>],
-			[<minecraft:rotten_flesh:0>, <abyssalcraft:corflesh:0>, <minecraft:rotten_flesh:0>]
+			[<ore:stickCopper>, <ore:blockGlass>, <ore:stickCopper>],
+			[<ore:stickCopper>, <ore:blockGlass>, <ore:stickCopper>],
+			[<ore:stickCopper>, <ore:blockGlass>, <ore:stickCopper>],
+		]
+	],
+	<thermaldynamics:duct_16:1> * 6: [ //Fluiduct opaque
+		[
+			[<ore:stickCopper>, <ore:plateLead>, <ore:stickCopper>],
+			[<ore:stickCopper>, <ore:plateLead>, <ore:stickCopper>],
+			[<ore:stickCopper>, <ore:plateLead>, <ore:stickCopper>],
+		]
+	],
+	<thermaldynamics:duct_16:2> * 6: [ // hardened Fluiduct clear
+		[
+			[<ore:stickInvar>, <ore:blockGlassHardened>, <ore:stickInvar>],
+			[<ore:stickInvar>, <ore:blockGlassHardened>, <ore:stickInvar>],
+			[<ore:stickInvar>, <ore:blockGlassHardened>, <ore:stickInvar>],
+		]
+	],
+	<thermaldynamics:duct_16:3> * 6: [ // hardened Fluiduct opaque
+		[
+			[<ore:stickInvar>, <ore:plateLead>, <ore:stickInvar>],
+			[<ore:stickInvar>, <ore:plateLead>, <ore:stickInvar>],
+			[<ore:stickInvar>, <ore:plateLead>, <ore:stickInvar>],
+		]
+	],
+	<thermaldynamics:duct_32:0> * 6: [ //Itemduct clear
+		[
+			[<ore:stickTin>, <ore:blockGlassHardened>, <ore:stickTin>],
+			[<ore:stickTin>, <ore:blockGlassHardened>, <ore:stickTin>],
+			[<ore:stickTin>, <ore:blockGlassHardened>, <ore:stickTin>],
+		]
+	],
+	<thermaldynamics:duct_32:1> * 6: [ //Itemduct opaque
+		[
+			[<ore:stickTin>, <ore:plateLead>, <ore:stickTin>],
+			[<ore:stickTin>, <ore:plateLead>, <ore:stickTin>],
+			[<ore:stickTin>, <ore:plateLead>, <ore:stickTin>],
+		]
+	],
+	<thermaldynamics:duct_0:6> * 6 : [ //Redstone Energy Fluxduct empty
+		[
+			[<ore:stickElectrum>, <ore:blockGlassHardened>, <ore:stickElectrum>],
+			[<ore:stickElectrum>, <ore:blockGlassHardened>, <ore:stickElectrum>],
+			[<ore:stickElectrum>, <ore:blockGlassHardened>, <ore:stickElectrum>],
 		]
 	]
-    */
 };
 
 /*
     Shapeless Recipes
 */
 static shapelessRecipes as IIngredient[][][IItemStack] = {
-	<thermaldynamics:duct_0:3> * 3 : [
-		[<thermaldynamics:duct_0:2>, <thermaldynamics:duct_0:2>, <thermaldynamics:duct_0:2>, <minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>, <ore:ingotSignalum>]
+	<thermaldynamics:duct_16:0> * 2: [
+		[<thermaldynamics:duct_16:1>, <thermaldynamics:duct_16:1>, <ore:blockGlass>]
 	],
-	<thermaldynamics:duct_0:4> * 3 : [
-		[<thermaldynamics:duct_0:3>, <thermaldynamics:duct_0:3>, <thermaldynamics:duct_0:3>, <minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>, <ore:ingotEnderium>]
+	<thermaldynamics:duct_16:1> * 2: [
+		[<thermaldynamics:duct_16:0>, <thermaldynamics:duct_16:0>, <ore:plateLead>]
+	],
+	<thermaldynamics:duct_16:2> * 2: [
+		[<thermaldynamics:duct_16:3>, <thermaldynamics:duct_16:3>, <ore:blockGlassHardened>]
+	],
+	<thermaldynamics:duct_16:3> * 2: [
+		[<thermaldynamics:duct_16:2>, <thermaldynamics:duct_16:2>, <ore:plateLead>]
+	],
+	<thermaldynamics:duct_32:0> * 2: [
+		[<thermaldynamics:duct_32:1>, <thermaldynamics:duct_32:1>, <ore:blockGlassHardened>]
+	],
+	<thermaldynamics:duct_32:1> * 2: [
+		[<thermaldynamics:duct_32:0>, <thermaldynamics:duct_32:0>, <ore:plateLead>]
+	],
+	<thermaldynamics:duct_32:2> * 2: [
+		[<thermaldynamics:duct_32:3>, <thermaldynamics:duct_32:3>, <ore:blockGlassHardened>]
+	],
+	<thermaldynamics:duct_32:3> * 2: [
+		[<thermaldynamics:duct_32:2>, <thermaldynamics:duct_32:2>, <ore:plateLead>]
+	],
+	<thermaldynamics:duct_32:4> * 2: [
+		[<thermaldynamics:duct_32:5>, <thermaldynamics:duct_32:5>, <ore:blockGlassHardened>]
+	],
+	<thermaldynamics:duct_32:5> * 2: [
+		[<thermaldynamics:duct_32:4>, <thermaldynamics:duct_32:4>, <ore:plateLead>]
+	],
+	<thermaldynamics:duct_32:6> * 2: [
+		[<thermaldynamics:duct_32:7>, <thermaldynamics:duct_32:7>, <ore:blockGlassHardened>]
+	],
+	<thermaldynamics:duct_32:7> * 2: [
+		[<thermaldynamics:duct_32:6>, <thermaldynamics:duct_32:6>, <ore:plateLead>]
+	],
+	<thermaldynamics:duct_16:4> * 2: [
+		[<thermaldynamics:duct_16:5>, <thermaldynamics:duct_16:5>, <ore:blockGlassHardened>]
+	],
+	<thermaldynamics:duct_16:5> * 2: [
+		[<thermaldynamics:duct_16:4>, <thermaldynamics:duct_16:4>, <ore:plateLead>]
+	],
+	<thermaldynamics:duct_16:6> * 2: [
+		[<thermaldynamics:duct_16:7>, <thermaldynamics:duct_16:7>, <ore:blockGlassHardened>]
+	],
+	<thermaldynamics:duct_16:7> * 2: [
+		[<thermaldynamics:duct_16:6>, <thermaldynamics:duct_16:6>, <ore:plateLead>]
 	]
 };
 
@@ -38,12 +120,32 @@ static shapelessRecipes as IIngredient[][][IItemStack] = {
 static removeRecipes as IItemStack[] = [
 	<thermaldynamics:duct_64:0>,
 	<thermaldynamics:duct_64:2>,
+	<ore:dustLumium>.firstItem,
+	<ore:dustSignalum>.firstItem,
+	<thermaldynamics:duct_16:0>,
+	<thermaldynamics:duct_16:1>,
+	<thermaldynamics:duct_16:2>,
+	<thermaldynamics:duct_16:3>,
+	<thermaldynamics:duct_16:4>,
+	<thermaldynamics:duct_16:5>,
+	<thermaldynamics:duct_16:6>,
+	<thermaldynamics:duct_16:7>,
+	<thermaldynamics:duct_32:0>,
+	<thermaldynamics:duct_32:1>,
+	<thermaldynamics:duct_32:2>,
+	<thermaldynamics:duct_32:3>,
+	<thermaldynamics:duct_32:4>,
+	<thermaldynamics:duct_32:5>,
+	<thermaldynamics:duct_32:6>,
+	<thermaldynamics:duct_32:7>,
+	<thermaldynamics:duct_0:0>,
+	<thermaldynamics:duct_0:1>,
 	<thermaldynamics:duct_0:2>,
 	<thermaldynamics:duct_0:3>,
 	<thermaldynamics:duct_0:4>,
 	<thermaldynamics:duct_0:5>,
-	<ore:dustLumium>.firstItem,
-	<ore:dustSignalum>.firstItem
+	<thermaldynamics:duct_0:6>,
+	<thermaldynamics:duct_0:9>
 ];
 
 static removeFurnace as IIngredient[] = [
@@ -53,6 +155,7 @@ static removeFurnace as IIngredient[] = [
 
 function machineRecipes() {
 
+	// Hardened Glass
 	val hardenedGlasses as IIngredient[IItemStack] = {
 		<thermalfoundation:glass:0> : <ore:dustCopper>,
 		<thermalfoundation:glass:1> : <ore:dustTin>,
@@ -175,6 +278,43 @@ function machineRecipes() {
         .buildAndRegister();
 
 	// Fluxducts
+	// Lead
+	gt.assembler.recipeBuilder()
+        .inputs([<ore:stickLead> * 2, <ore:blockGlass>])
+		.fluidInputs([<liquid:redstone> * 288])
+        .outputs([<thermaldynamics:duct_0> * 2])
+        .EUt(30).duration(sec(9))
+        .buildAndRegister();
+	//Hardened
+	gt.assembler.recipeBuilder()
+        .inputs([<thermaldynamics:duct_0>, <ore:stickInvar> * 2])
+		.fluidInputs([<liquid:redstone> * 288])
+        .outputs([<thermaldynamics:duct_0:1>])
+        .EUt(120).duration(sec(9))
+        .buildAndRegister();
+	//Signalum
+	gt.assembler.recipeBuilder()
+        .inputs([<thermaldynamics:duct_0:2>, <ore:plateSignalum> * 1])
+		.notConsumable(gt.getCirc(1))
+		.fluidInputs([<liquid:redstone> * 288])
+        .outputs([<thermaldynamics:duct_0:3>])
+        .EUt(120).duration(sec(9))
+        .buildAndRegister();
+	//Resonant
+	gt.assembler.recipeBuilder()
+        .inputs([<thermaldynamics:duct_0:3>, <ore:stickEnderium> * 2])
+		.notConsumable(gt.getCirc(1))
+		.fluidInputs([<liquid:redstone> * 288])
+        .outputs([<thermaldynamics:duct_0:4>])
+        .EUt(120).duration(sec(9))
+        .buildAndRegister();
+	//Empty cryo
+	gt.assembler.recipeBuilder()
+        .inputs([<thermaldynamics:duct_0:4>, <ore:stickElectrum> * 8, <ore:blockGlassHardened> * 4])
+		.fluidInputs([<liquid:redstone> * 288])
+        .outputs([<thermaldynamics:duct_0:9>])
+        .EUt(300).duration(sec(16))
+        .buildAndRegister();
 	gt.fluid_canner.recipeBuilder()
 		.inputs([<thermaldynamics:duct_0:6>])
         .fluidInputs([<liquid:redstone> * 200])
@@ -188,6 +328,48 @@ function machineRecipes() {
         .EUt(240).duration(sec(14))
         .buildAndRegister();
 
+	//Fluiducts
+	//Signalum Plated
+	gt.assembler.recipeBuilder()
+        .inputs([<thermaldynamics:duct_16:2>, <ore:stickElectrum> * 1, <ore:plateSignalum> * 1])
+		.notConsumable(gt.getCirc(1))
+		.fluidInputs([<liquid:redstone> * 144])
+        .outputs([<thermaldynamics:duct_16:4>])
+        .EUt(120).duration(sec(9))
+        .buildAndRegister();
+	//Super Laminar
+	gt.assembler.recipeBuilder()
+        .inputs([<thermaldynamics:duct_16:2>, <ore:stickBronze> * 8, <ore:blockGlassHardened> * 4])
+		.fluidInputs([<liquid:glowstone> * 288])
+        .outputs([<thermaldynamics:duct_16:6>])
+        .EUt(300).duration(sec(16))
+        .buildAndRegister();
+
+	//Itemducts
+	//Impulse
+	gt.chemical_bath.recipeBuilder()
+        .inputs([<thermaldynamics:duct_32:0>])
+		.fluidInputs([<liquid:glowstone> * 288])
+        .outputs([<thermaldynamics:duct_32:2>])
+        .EUt(120).duration(sec(9))
+        .buildAndRegister();
+	//Signalum Plated
+	gt.assembler.recipeBuilder()
+        .inputs([<thermaldynamics:duct_32:0>, <ore:stickElectrum> * 1, <ore:plateSignalum> * 1])
+		.notConsumable(gt.getCirc(1))
+		.fluidInputs([<liquid:redstone> * 144])
+        .outputs([<thermaldynamics:duct_32:4>])
+        .EUt(120).duration(sec(9))
+        .buildAndRegister();
+	//Signalum Plated Impulse
+	gt.assembler.recipeBuilder()
+        .inputs([<thermaldynamics:duct_32:2>, <ore:stickElectrum> * 1, <ore:plateSignalum> * 1])
+		.notConsumable(gt.getCirc(1))
+		.fluidInputs([<liquid:redstone> * 144])
+        .outputs([<thermaldynamics:duct_32:6>])
+        .EUt(120).duration(sec(9))
+        .buildAndRegister();
+
 	// remove alloying in smeltery
 	Alloy.removeRecipe(<liquid:lumium>);
 	Alloy.removeRecipe(<liquid:signalum>);
@@ -198,7 +380,7 @@ function init() {
 	// Un-named recipes
 	craft.process(shapedRecipes, false);
     craft.process(shapelessRecipes);
-	craft.removeRecipes(removeRecipes);
+	craft.removeRecipes(removeRecipes, true);
 	craft.removeFurnace(removeFurnace);
 
     machineRecipes();

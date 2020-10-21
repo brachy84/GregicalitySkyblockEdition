@@ -69,6 +69,10 @@ static disabledItems as IIngredient[][string] = {
         <threng:machine:2>,
         <threng:machine:5>
     ],
+    thermal : [
+        <thermaldynamics:duct_0:7>,
+        <thermaldynamics:duct_0:8>
+    ],
     misc : [
         <exnihilocreatio:block_crucible>,
         <ceramics:unfired_clay:6>,

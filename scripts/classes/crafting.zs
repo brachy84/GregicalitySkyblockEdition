@@ -33,6 +33,11 @@ zenClass Crafting {
 			recipes.remove(toRemove);
 		}
 	}
+	function removeRecipes(removals as IItemStack[], nbt as bool) {
+		for toRemove in removals {
+			recipes.remove(toRemove, nbt);
+		}
+	}
 
     //FURNACE
     function removeFurnace(removals as IIngredient[]) {
