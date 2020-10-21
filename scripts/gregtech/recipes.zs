@@ -28,7 +28,8 @@ static shapelessRecipes as IIngredient[][][IItemStack] = {
 static removeRecipes as IItemStack[] = [
     <gregtech:meta_item_2:32015>,
     <gtadditions:ga_meta_item:32038>,
-    <gregtech:metal_casing:1>
+    <gregtech:metal_casing:1>,
+    <opencomputers:material:6>
 ];
 
 static removeFurnace as IIngredient[] = [
@@ -55,12 +56,18 @@ function machineRecipes() {
         .duration(500).EUt(16)
         .buildAndRegister();
 
-    //Fix
+    //opencomputers gate
+     gt.assembler.recipeBuilder()
+        .inputs([gt.getCirc("LV"), <ore:wireFineGold> * 4, <ore:wireFineRedAlloy> * 2])
+        .fluidInputs([<liquid:rubber> * 288])
+        .outputs([<opencomputers:material:6>])
+        .duration(sec(10)).EUt(120)
+        .buildAndRegister();
 
     //Porcelain Brick
     gt.alloy_smelter.recipeBuilder()
         .inputs([<ore:clayPorcelain>])
-        .notConsumable(<gregtech:meta_item_1:32306>)
+        .notConsumable(<metaitem:shape.mold.ingot>)
         .outputs([<ceramics:unfired_clay:5>])
         .duration(200).EUt(2)
         .buildAndRegister();
