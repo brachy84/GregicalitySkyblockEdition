@@ -8,15 +8,12 @@ import mods.gregtech.recipe.FuelRecipe;
 import mods.gtadditions.recipe.Utils;
 
 static shapedRecipes as IIngredient[][][][IItemStack] = {
-	/*
-    <abyssalcraft:necronomicon:0>: [
+    <gregtech:metal_casing:1> : [
 		[
-			[<minecraft:rotten_flesh:0>, <abyssalcraft:corflesh:0>, <minecraft:rotten_flesh:0>],
-			[<abyssalcraft:corflesh:0>, <primal:plant_cloth:0>, <abyssalcraft:corflesh:0>],
-			[<minecraft:rotten_flesh:0>, <abyssalcraft:corflesh:0>, <minecraft:rotten_flesh:0>]
+			[<ore:ingotFireclay>, <ore:ingotFireclay>],
+			[<ore:ingotFireclay>, <ore:ingotFireclay>]
 		]
 	]
-    */
 };
 
 /*
@@ -29,7 +26,9 @@ static shapelessRecipes as IIngredient[][][IItemStack] = {
     Recipe Removals
 */
 static removeRecipes as IItemStack[] = [
-
+    <gregtech:meta_item_2:32015>,
+    <gtadditions:ga_meta_item:32038>,
+    <gregtech:metal_casing:1>
 ];
 
 static removeFurnace as IIngredient[] = [
@@ -39,19 +38,41 @@ static removeFurnace as IIngredient[] = [
 function machineRecipes() {
     //Compressed Fireclay
     Utils.removeRecipeByOutput(gt.compressor, [<gregtech:meta_item_2:32014>], [], false); //Compressed Fireclay
-    
+    furnace.addRecipe(<gregtech:meta_item_2:32015>, <gtadditions:ga_meta_item:32037>);
+
+    //Glass
+    gt.alloy_smelter.recipeBuilder()
+        .inputs([<ore:dustGlass>])
+        .notConsumable(<metaitem:shape.mold.block>)
+        .outputs([<tconstruct:clear_glass:0>])
+        .duration(sec(8)).EUt(8)
+        .buildAndRegister();
+
     //Useful
-    gt.lathe.recipeBuilder().inputs([<minecraft:stone>]).outputs([<exnihilocreatio:item_material:6>,<gregtech:meta_item_1:1328>*2]).duration(500).EUt(16).buildAndRegister();
+    gt.lathe.recipeBuilder()
+        .inputs([<minecraft:stone>])
+        .outputs([<exnihilocreatio:item_material:6>,<gregtech:meta_item_1:1328>*2])
+        .duration(500).EUt(16)
+        .buildAndRegister();
 
     //Fix
 
     //Porcelain Brick
-    gt.alloy_smelter.recipeBuilder().inputs([<ore:clayPorcelain>]).notConsumable(<gregtech:meta_item_1:32306>).outputs([<ceramics:unfired_clay:5>]).duration(200).EUt(2).buildAndRegister();
+    gt.alloy_smelter.recipeBuilder()
+        .inputs([<ore:clayPorcelain>])
+        .notConsumable(<gregtech:meta_item_1:32306>)
+        .outputs([<ceramics:unfired_clay:5>])
+        .duration(200).EUt(2)
+        .buildAndRegister();
 
     //Glasses
 
     //Storage Drawers
-    gt.cutting_saw.recipeBuilder().inputs([<ore:drawerTrim>]).outputs([<storagedrawers:upgrade_template>*2]).EUt(4).duration(50).buildAndRegister();
+    gt.cutting_saw.recipeBuilder()
+        .inputs([<ore:drawerTrim>])
+        .outputs([<storagedrawers:upgrade_template>*2])
+        .EUt(4).duration(50)
+        .buildAndRegister();
 
     //Forestry Automation
     gt.fluid_extractor.recipeBuilder().inputs([<forestry:crafting_material:5>]).fluidOutputs([<liquid:ice>]).EUt(128).duration(128).buildAndRegister();
