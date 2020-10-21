@@ -72,6 +72,13 @@ static removeFurnace as IIngredient[] = [
 ];
 
 function machineRecipes() {
+    //Resonant ender
+    gt.fluid_extractor.recipeBuilder()
+        .inputs([<minecraft:ender_pearl>])
+        .fluidOutputs([<liquid:ender> * 250])
+        .EUt(32).duration(sec(4))
+        .buildAndRegister();
+
     //Glass
     furnace.addRecipe(<minecraft:glass>,<tconstruct:clear_glass>);
 
