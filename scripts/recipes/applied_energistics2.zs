@@ -221,6 +221,13 @@ function machineRecipes() {
         .EUt(5).duration(392)
         .buildAndRegister();
 
+    // Fluix Dust
+    gt.macerator.recipeBuilder()
+        .inputs([<appliedenergistics2:material:7>])
+        .outputs([<appliedenergistics2:material:8>])
+        .EUt(16).duration(sec(4))
+        .buildAndRegister();
+
     // Quartz Glass
     gt.alloy_smelter.recipeBuilder()
         .inputs([<ore:blockGlass>, <ore:dustQuartz> * 2])
