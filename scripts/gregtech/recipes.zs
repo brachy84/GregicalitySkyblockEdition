@@ -60,7 +60,7 @@ function machineRecipes() {
      gt.assembler.recipeBuilder()
         .inputs([gt.getCirc("LV"), <ore:wireFineGold> * 4, <ore:wireFineRedAlloy> * 2])
         .fluidInputs([<liquid:rubber> * 288])
-        .outputs([<opencomputers:material:6>])
+        .outputs([<opencomputers:material:6> * 8])
         .duration(sec(10)).EUt(120)
         .buildAndRegister();
 
