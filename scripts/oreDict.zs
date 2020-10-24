@@ -414,6 +414,10 @@ static ores as string[IOreDictEntry] = {
     <ore:nuggetPlatinum> : gt,
     <ore:gearPlatinum> : gt,
 
+    <ore:gemRuby> :gt,
+
+    <ore:gemSapphire> :gt,
+
     <ore:ingotSilver> : gt,
     <ore:plateSilver> : gt,
     <ore:blockSilver> : gt,
