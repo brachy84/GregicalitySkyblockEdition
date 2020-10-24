@@ -3,8 +3,7 @@
 	y: -0.5d,
 	shape: "pentagon",
 	dependencies: [
-		"caa15342",
-		"9a0ae84d"
+		"caa15342"
 	],
 	tasks: [{
 		uid: "a35b89b2",
