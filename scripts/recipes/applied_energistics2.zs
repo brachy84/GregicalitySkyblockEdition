@@ -10,8 +10,8 @@ import mods.gtadditions.recipe.LargeRecipeBuilder;
 import mods.threng.Aggregator;
 
 static quartzGlass as IIngredient = <appliedenergistics2:quartz_glass>; 
-static matPlate as IIngredient = <ore:plateNitinolA>;
-static matIngot as IIngredient = <ore:ingotNitinolA>;
+static matPlate as IIngredient = <ore:plateSkyrium>;
+static matIngot as IIngredient = <ore:ingotSkyrium>;
 static processor  as IIngredient[] = [<appliedenergistics2:material:23>, <appliedenergistics2:material:22>, <appliedenergistics2:material:24>];
 static apMatPlate as IIngredient = <ore:plateDenseHssg>;
 
@@ -70,7 +70,7 @@ static addShaped as IIngredient[][][][IItemStack] = {
     ],
     <appliedenergistics2:drive> : [
         [
-            [matPlate, <meta_tile_entity:gregtech:titanium_chest>, matPlate],
+            [matPlate, <meta_tile_entity:gregtech:stainless_steel_chest>, matPlate],
             [processor[2], <gregtech:machine_casing:3>, processor[2]],
             [matPlate, <ore:cableFluix>, matPlate]
         ]
@@ -204,6 +204,34 @@ static removeFurnace as IIngredient[] = [
 ];
 
 function machineRecipes() {
+    // Skyrium
+    gt.mixer.recipeBuilder()
+        .inputs([<appliedenergistics2:material:45> * 2, <ore:dustCobalt>, <ore:dustSmallBlueSteel> * 4, <ore:dustTinyCertusQuartz> * 3])
+        .outputs([<ore:dustSkyrium>.firstItem])
+        .EUt(32).duration(sec(6))
+        .buildAndRegister();
+    gt.blast_furnace.recipeBuilder()
+		.inputs([<ore:dustSkyrium>])
+		.property("temperature", 3400)
+		.outputs([<ore:ingotSkyrium>.firstItem * 1])
+		.duration(sec(20))
+		.EUt(120)
+		.buildAndRegister();
+
+    gt.compressor.recipeBuilder()
+        .inputs([<appliedenergistics2:material:45> * 9])
+        .outputs([<appliedenergistics2:sky_stone_block:8>])
+        .EUt(512).duration(sec(30))
+        .buildAndRegister();
+    gt.blast_furnace.recipeBuilder()
+		.inputs([<appliedenergistics2:sky_stone_block:8>])
+		.property("temperature", 3600)
+		.outputs([<appliedenergistics2:smooth_sky_stone_block:8> * 1])
+		.duration(sec(60))
+		.EUt(120)
+		.buildAndRegister();
+
+
     // Add charged Certus to pure certus centrifuge
     gt.large_centrifuge.findRecipe(5, [<ore:dustPureCertusQuartz>.firstItem], null).remove();
     gt.centrifuge.findRecipe(5, [<ore:dustPureCertusQuartz>.firstItem], null).remove();

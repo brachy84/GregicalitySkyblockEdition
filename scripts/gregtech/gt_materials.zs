@@ -5,6 +5,9 @@ var materialList = MaterialRegistry.getAllMaterials();
 
 var matIndex as int = 500;
 
+val skyrium = MaterialRegistry.createIngotMaterial(matIndex, "skyrium", 0x344275, "SHINY", 3, [], 1.6, 100, 3400);
+skyrium.addFlags(["GENERATE_PLATE"]);
+
 <material:copper>.addFlags(["GENERATE_LONG_ROD","GENERATE_SPRING"]);
 <material:bronze>.addFlags(["GENERATE_LONG_ROD","GENERATE_SPRING"]);
 <material:brass>.addFlags(["GENERATE_LONG_ROD","GENERATE_SPRING"]);
