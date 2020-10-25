@@ -32,7 +32,7 @@
 		items: [{
 			item: "gregtech:wire_coil"
 		}],
-		count: 18L
+		count: 16L
 	},
 	{
 		uid: "a9800187",

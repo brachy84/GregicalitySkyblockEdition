@@ -1,6 +1,10 @@
 {
 	x: 6.0d,
 	y: 4.5d,
+	description: "Unobtainable",
+	text: [
+		""
+	],
 	tasks: [{
 		uid: "a4e1f483",
 		type: "item",
