@@ -50,7 +50,8 @@ static removeRecipes as IIngredient[] = [
     <ae2fc:fluid_packet_decoder>,
     <ae2fc:ingredient_buffer>,
     <ae2fc:burette>,
-    <threng:material:1>
+    <threng:material:1>,
+    <appliedenergistics2:part:140>
 ];
 
 static addShaped as IIngredient[][][][IItemStack] = {
@@ -200,7 +201,7 @@ static addShapeless as IIngredient[][][IItemStack] = {
 };
 
 static removeFurnace as IIngredient[] = [
-
+    <appliedenergistics2:smooth_sky_stone_block>
 ];
 
 function machineRecipes() {
@@ -219,14 +220,14 @@ function machineRecipes() {
 		.buildAndRegister();
 
     gt.compressor.recipeBuilder()
-        .inputs([<appliedenergistics2:material:45> * 9])
-        .outputs([<appliedenergistics2:sky_stone_block:8>])
+        .inputs([<appliedenergistics2:material:45> * 4])
+        .outputs([<appliedenergistics2:sky_stone_block>])
         .EUt(512).duration(sec(30))
         .buildAndRegister();
     gt.blast_furnace.recipeBuilder()
-		.inputs([<appliedenergistics2:sky_stone_block:8>])
+		.inputs([<appliedenergistics2:sky_stone_block>])
 		.property("temperature", 3600)
-		.outputs([<appliedenergistics2:smooth_sky_stone_block:8> * 1])
+		.outputs([<appliedenergistics2:smooth_sky_stone_block> * 1])
 		.duration(sec(60))
 		.EUt(120)
 		.buildAndRegister();

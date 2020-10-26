@@ -24,6 +24,16 @@ static shapedRecipes as IIngredient[][][][IItemStack] = {
             [<ore:clayPorcelain>,<metaitem:wooden_form.brick>,<ore:clayPorcelain>],
             [<ore:clayPorcelain>,<ore:clayPorcelain>,<ore:clayPorcelain>]
         ]
+    ],
+    <projectred-transmission:wire:0> : [
+        [
+            [<ore:wireFineRedAlloy>],
+            [<ore:wireFineRedAlloy>],
+            [<ore:wireFineRedAlloy>]
+        ],
+        [
+            [<ore:wireFineRedAlloy>, <ore:wireFineRedAlloy>, <ore:wireFineRedAlloy>]
+        ]
     ]
 };
 
@@ -84,15 +94,32 @@ function machineRecipes() {
 
     furnace.addRecipe(<ceramics:unfired_clay:5>,<contenttweaker:unfired_porcelain_brick>);
 
+    //Project red
+    gt.compressor.findRecipe(2, [<projectred-core:resource_item:200> * 9], null).remove();
+    gt.compressor.recipeBuilder()
+        .inputs([<ore:gemRuby> * 9])
+        .outputs([<ore:blockRuby>.firstItem])
+        .EUt(2).duration(sec(20))
+        .buildAndRegister();
+    gt.compressor.findRecipe(2, [<projectred-core:resource_item:201> * 9], null).remove();
+    gt.compressor.recipeBuilder()
+        .inputs([<ore:gemSapphire> * 9])
+        .outputs([<ore:blockSapphire>.firstItem])
+        .EUt(2).duration(sec(20))
+        .buildAndRegister();
+    gt.compressor.findRecipe(2, [<projectred-core:resource_item:103> * 9], null).remove();
+    gt.compressor.recipeBuilder()
+        .inputs([<ore:ingotRedAlloy> * 9])
+        .outputs([<ore:blockRedAlloy>.firstItem])
+        .EUt(2).duration(sec(20))
+        .buildAndRegister();
     // Redstone Alloy cable
-    gt.wiremill.recipeBuilder()
-        .inputs([<ore:ingotRedstoneAlloy>])
-        .outputs([<projectred-transmission:wire:0> * 4])
-        .EUt(8).duration(sec(8))
+    gt.assembler.recipeBuilder()
+        .inputs([<ore:wireFineRedAlloy> * 2])
+        .outputs([<projectred-transmission:wire:0>])
+        .EUt(8).duration(sec(6))
         .buildAndRegister();
 
-
-    
     recipes.addShaped(<exnihilocreatio:block_crucible:1>,[
     [<ceramics:unfired_clay:5>,null,<ceramics:unfired_clay:5>],
     [<ceramics:unfired_clay:5>,null,<ceramics:unfired_clay:5>],

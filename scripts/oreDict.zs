@@ -313,8 +313,10 @@ static oresAdd as IItemStack[][IOreDictEntry] = {
         <meta_tile_entity:gregtech:rotor_holder.max>
     ],
     //other
-    <ore:dustQuartz> : <ore:dustNetherQuartz>.items,
-    <ore:dustQuartz> : <ore:dustCertusQuartz>.items,
+    <ore:dustQuartz> : [
+        <gregtech:meta_item_1:2201>, //Netherqueartz dust
+        <gregtech:meta_item_1:2202> //Certus dust
+    ],
     <ore:crystalFluix> : [
         <appliedenergistics2:material:12>
     ],
@@ -414,9 +416,9 @@ static ores as string[IOreDictEntry] = {
     <ore:nuggetPlatinum> : gt,
     <ore:gearPlatinum> : gt,
 
-    <ore:gemRuby> :gt,
+    <ore:gemRuby> : gt,
 
-    <ore:gemSapphire> :gt,
+    <ore:gemSapphire> : gt,
 
     <ore:ingotSilver> : gt,
     <ore:plateSilver> : gt,

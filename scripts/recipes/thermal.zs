@@ -8,6 +8,10 @@ import crafttweaker.liquid.ILiquidStack;
 import mods.gtadditions.recipe.Utils;
 import mods.tconstruct.Alloy;
 
+static redWire as IIngredient = <projectred-transmission:wire:0>;
+static paper as IIngredient = <minecraft:paper>;
+static enderEye as IIngredient = <minecraft:ender_eye>;
+
 static shapedRecipes as IIngredient[][][][IItemStack] = {
     <thermaldynamics:duct_16:0> * 6: [ //Fluiduct clear
 		[
@@ -56,6 +60,111 @@ static shapedRecipes as IIngredient[][][][IItemStack] = {
 			[<ore:stickElectrum>, <ore:blockGlassHardened>, <ore:stickElectrum>],
 			[<ore:stickElectrum>, <ore:blockGlassHardened>, <ore:stickElectrum>],
 			[<ore:stickElectrum>, <ore:blockGlassHardened>, <ore:stickElectrum>],
+		]
+	],
+	<thermaldynamics:servo:0> : [
+		[
+			[null, gt.screwDriver, null],
+			[<ore:screwIron>, redWire, <ore:screwIron>],
+			[<ore:plateIron>, <ore:blockGlass>, <ore:plateIron>]
+		]
+	],
+	<thermaldynamics:servo:1> : [
+		[
+			[null, gt.screwDriver, null],
+			[<ore:screwTinAlloy>, redWire, <ore:screwTinAlloy>],
+			[<ore:plateInvar>, <ore:blockGlass>, <ore:plateInvar>]
+		]
+	],
+	<thermaldynamics:servo:2> : [
+		[
+			[null, gt.screwDriver, null],
+			[<ore:screwSteel>, redWire, <ore:screwSteel>],
+			[<ore:plateElectrum>, <ore:blockGlass>, <ore:plateElectrum>]
+		]
+	],
+	<thermaldynamics:servo:3> : [
+		[
+			[null, gt.screwDriver, null],
+			[<ore:screwStainlessSteel>, redWire, <ore:screwStainlessSteel>],
+			[<ore:plateSignalum>, <ore:blockGlass>, <ore:plateSignalum>]
+		]
+	],
+	<thermaldynamics:servo:4> : [
+		[
+			[null, gt.screwDriver, null],
+			[<ore:screwTitanium>, redWire, <ore:screwTitanium>],
+			[<ore:plateEnderium>, <ore:blockGlass>, <ore:plateEnderium>]
+		]
+	],
+	<thermaldynamics:filter:0> : [
+		[
+			[null, gt.screwDriver, null],
+			[<ore:screwIron>, paper, <ore:screwIron>],
+			[<ore:plateIron>, <ore:blockGlass>, <ore:plateIron>]
+		]
+	],
+	<thermaldynamics:filter:1> : [
+		[
+			[null, gt.screwDriver, null],
+			[<ore:screwTinAlloy>, paper, <ore:screwTinAlloy>],
+			[<ore:plateInvar>, <ore:blockGlass>, <ore:plateInvar>]
+		]
+	],
+	<thermaldynamics:filter:2> : [
+		[
+			[null, gt.screwDriver, null],
+			[<ore:screwSteel>, paper, <ore:screwSteel>],
+			[<ore:plateElectrum>, <ore:blockGlass>, <ore:plateElectrum>]
+		]
+	],
+	<thermaldynamics:filter:3> : [
+		[
+			[null, gt.screwDriver, null],
+			[<ore:screwStainlessSteel>, paper, <ore:screwStainlessSteel>],
+			[<ore:plateSignalum>, <ore:blockGlass>, <ore:plateSignalum>]
+		]
+	],
+	<thermaldynamics:filter:4> : [
+		[
+			[null, gt.screwDriver, null],
+			[<ore:screwTitanium>, paper, <ore:screwTitanium>],
+			[<ore:plateEnderium>, <ore:blockGlass>, <ore:plateEnderium>]
+		]
+	],
+	<thermaldynamics:retriever:0> : [
+		[
+			[null, gt.screwDriver, null],
+			[<ore:screwIron>, enderEye, <ore:screwIron>],
+			[<ore:plateIron>, <ore:blockGlass>, <ore:plateIron>]
+		]
+	],
+	<thermaldynamics:retriever:1> : [
+		[
+			[null, gt.screwDriver, null],
+			[<ore:screwTinAlloy>, enderEye, <ore:screwTinAlloy>],
+			[<ore:plateInvar>, <ore:blockGlass>, <ore:plateInvar>]
+		]
+	],
+	<thermaldynamics:retriever:2> : [
+		[
+			[null, gt.screwDriver, null],
+			[<ore:screwSteel>, enderEye, <ore:screwSteel>],
+			[<ore:plateElectrum>, <ore:blockGlass>, <ore:plateElectrum>]
+		]
+	],
+	<thermaldynamics:retriever:3> : [
+		[
+			[null, gt.screwDriver, null],
+			[<ore:screwStainlessSteel>, enderEye, <ore:screwStainlessSteel>],
+			[<ore:plateSignalum>, <ore:blockGlass>, <ore:plateSignalum>]
+		]
+	],
+	<thermaldynamics:retriever:4> : [
+		[
+			[null, gt.screwDriver, null],
+			[<ore:screwTitanium>, enderEye, <ore:screwTitanium>],
+			[<ore:plateEnderium>, <ore:blockGlass>, <ore:plateEnderium>]
 		]
 	]
 };
@@ -145,7 +254,22 @@ static removeRecipes as IItemStack[] = [
 	<thermaldynamics:duct_0:4>,
 	<thermaldynamics:duct_0:5>,
 	<thermaldynamics:duct_0:6>,
-	<thermaldynamics:duct_0:9>
+	<thermaldynamics:duct_0:9>,
+	<thermaldynamics:servo:0>,
+	<thermaldynamics:servo:1>,
+	<thermaldynamics:servo:2>,
+	<thermaldynamics:servo:3>,
+	<thermaldynamics:servo:4>,
+	<thermaldynamics:filter:0>,
+	<thermaldynamics:filter:1>,
+	<thermaldynamics:filter:2>,
+	<thermaldynamics:filter:3>,
+	<thermaldynamics:filter:4>,
+	<thermaldynamics:retriever:0>,
+	<thermaldynamics:retriever:1>,
+	<thermaldynamics:retriever:2>,
+	<thermaldynamics:retriever:3>,
+	<thermaldynamics:retriever:4>
 ];
 
 static removeFurnace as IIngredient[] = [
